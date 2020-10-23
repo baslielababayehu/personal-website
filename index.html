@@ -40,36 +40,25 @@
 
   <body>
     <!-- ======= Navbar ======= -->
-    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-      <div class="container py-2 py-md-5">
-        <div class="row align-items-start">
-          <div class="col-12">
-            <ul class="custom-menu">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Works</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+    <!-- <div class="collapse navbar-collapse custom-navmenu" id="main-navbar"> -->
+    <nav
+      style="background-color: white; display: flex; align-items: center;justify-content: center;"
+    >
+      <a class="mt-4" href="#">
+        <img src="/assets/img/logo.png" width="50" height="50" alt="" />
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-item nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
         </div>
       </div>
-    </div>
-
-    <nav class="navbar navbar-light custom-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"></a>
-
-        <a
-          href="#"
-          class="burger"
-          data-toggle="collapse"
-          data-target="#main-navbar"
-        >
-          <span></span>
-        </a>
-      </div>
     </nav>
+    <!-- </div> -->
 
     <main id="main">
       <!-- ======= Works Section ======= -->
@@ -78,31 +67,41 @@
           <div class="row mb-5 align-items-center">
             <div class="col-12 mb-5" data-aos="fade-up">
               <div>
-                <h2 class="greeting"></h2>
+                <h2 class="greeting"
+                style="display: inline;"
+                ></h2>
                 <!-- <h3><i class="fa fa-linkedin"></i></h3> -->
               </div>
-              <div class="row p-4">
+              <div
+                class="row p-4"
+                style="background-color: rgba(52, 73, 94, 0.02)"
+              >
                 <div
-                  class="col-sm-6 col-md-6 col-lg-4 col-xl-3 d-none d-sm-block d-md-block d-lg-block"
+                  class="col-sm-4 col-xs-6 col-md-3 col-lg-2 col-xl-2 d-sm-block d-md-block d-lg-block"
                   data-aos="fade-up"
                   data-aos-delay="1000"
-                  style="height: auto; width: 25%; min-width: 100px;"
+                  style="height: auto; width: 15%; min-width: 100px"
                 >
                   <img
-                    class="img-fluid border p-2"
+                    class="img-fluid p-2 image-blurred-edge"
                     src="assets/img/profilePhoto.png"
                     alt=""
-                    style="height: auto; width: 100%; min-width: 100px;"
+                    style="
+                      height: auto;
+                      width: 100%;
+                      min-width: 50px;
+                      border-radius: 195px;
+                    "
                   />
                 </div>
                 <div
                   data-aos="fade-up"
                   data-aos-delay="1000"
-                  class="col-sm-6 col-md-6 col-lg-8 border"
+                  class="col-sm-6 col-md-6 col-lg-8"
                 >
                   <h6
                     class="description mt-4"
-                    style="display: flex; align-items: center;"
+                    style="display: inline; align-items: center"
                   ></h6>
                 </div>
               </div>
@@ -117,14 +116,14 @@
             <div class="col-12" data-aos="fade-up">
               <div
                 class="col-12 social mb-5"
-                style="display: flex; justify-content: center;"
+                style="display: flex; justify-content: center"
               >
                 <a
                   href="https://github.com/baslielababayehu"
                   target="_blank"
                   class="hvr-grow"
                   ><span class=""
-                    ><i style="font-size: 60px;" class="fab fa-github"></i>
+                    ><i style="font-size: 60px" class="fab fa-github"></i>
                     <h5>GitHub</h5></span
                   ></a
                 >
@@ -133,14 +132,17 @@
                   target="_blank"
                   class="ml-3 hvr-grow"
                   ><span
-                    ><i style="font-size: 50px;" class="fab fa-linkedin-in"></i>
+                    ><i style="font-size: 50px" class="fab fa-linkedin-in"></i>
                     <h5>Linkedin</h5></span
                   ></a
                 >
-                <a href="#" class="ml-3 hvr-grow"
+                <a
+                  href="/assets/files/Basliel_Ababayehu__Resume.pdf"
+                  target="_blank"
+                  class="ml-3 hvr-grow"
                   ><span
                     ><i
-                      style="font-size: 50px;"
+                      style="font-size: 50px"
                       class="far fa-file-pdf"
                       aria-hidden="true"
                     ></i>
@@ -149,8 +151,8 @@
                 >
               </div>
             </div>
-            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
-              <h2>
+            <div class="col-12 heading" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="heading">
                 My Tools
                 <i class="fa fa-tools"></i>
               </h2>
@@ -159,19 +161,29 @@
               <div class="row">
                 <div class="col-12">
                   <h5>
-                    <b>Front End:</b> React, Vanilla JavaScript, HTML5, CSS3,
-                    Bootstrap
+                    <b>Programming Languages</b> :
+                    <i class="fab fa-python"></i> Python, JavaScript, C++ <br />
+
+                    <b> Front-end</b>: <i class="fab fa-react"></i> ReactJS,
+                    <i class="fab fa-js-square"></i> Vanilla JavaScript, HTML5/CSS3 <br />
+
+                    <b> Back-end</b>: <i class="fab fa-node-js"></i> Node.js,
+                    Express.js, MongoDB <br />
+
+                    <b>Other</b>: <i class="fab fa-aws"></i> AWS (EC2, S3, Route
+                    53), Git
                   </h5>
-                  <h5><b>Back End:</b> Node.js, Express</h5>
-                  <h5><b>Scripting:</b> Python</h5>
+
+                  <h5></h5>
                 </div>
               </div>
             </div>
-            <div class="col-12 mt-5" data-aos="fade-up" data-aos-delay="100">
-              <h2>
-                Personal Projects
+            <div class="col-12 mt-5 heading" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="heading">
+                My Software Projects
                 <i class="far fa-lightbulb" aria-hidden="true"></i>
               </h2>
+              <h5 >Below are some of the interesting side projects I've been working on recently!</h5>
             </div>
             <div
               class="col-md-12 col-lg-6 text-left text-lg-right"
@@ -195,176 +207,214 @@
           >
             <div class="item web col-sm-6 col-md-6 col-lg-6 mb-4">
               <h5>
-                Perfect Playback (coming soon)
-                <i class="far fa-play-circle"></i>
+                Perfect Playback for Spotify
+                <i class="fab fa-spotify"></i>
                 <i class="far fa-sun-fork" aria-hidden="true"></i>
               </h5>
               <h6>
-                <a href="#">What I did</a> | <a href="#">Live Site</a> |
-                <a href="#">View on GitHub</a>
+                <a href="https://perfectplayback.herokuapp.com/" target="_blank"
+                  >Live Site</a
+                >
+                |
+                <a
+                  href="https://github.com/baslielababayehu/Perfect-Playback-for-Spotify"
+                  target="_blank"
+                  >Source Code</a
+                >
               </h6>
               <a href="#" class="item-wrap fancybox">
                 <div class="work-info">
                   <h3>View Details</h3>
-                  <!-- <span> Vanilla Javascript, Node.js and Express</span> -->
+                  <!-- <span> Vanilla Javascript, Node.js and  Express.js</span> -->
                 </div>
                 <img
-                  style="background-color: #f8f9fa;"
+                  style="background-color: #f8f9fa"
                   class="img-fluid"
-                  src="assets/img/img_1.jpg"
+                  src="assets/img/perfect_playback.gif"
                 />
               </a>
               <div class="row p-3">
-                <div class="col-12 card p-1">
+                <div
+                  class="col-12 card p-1"
+                  style="background-color: rgba(52, 73, 94, 0.05)"
+                >
                   <h6>
-                    <b>Brief Description</b>: Uses the spotify API mine for
-                    exiting public playlists based on keywords and export that
-                    playlist to Spotify
+                    <b>Brief Description</b>: Perfect Playback suggests 100 Spotify playlist ideas based on a keyword and automatically adds chosen tracks to a new Spotify playlist. it generates these song recommendations by aggregating data from 50 other top public playlists relevant to the user-specified keyword.
                   </h6>
-                  <h6><b>Tech: MongoDB, React, Node.js, Express (MERN)</b></h6>
+                  <h5>
+                    <b>
+                      Technologies: MongoDB, Express.js, React, Node.js
+                      (MERN)</b
+                    >
+                  </h5>
+                  <h6>Tools: Spotify API</h6>
                 </div>
               </div>
             </div>
             <div class="item web col-sm-6 col-md-6 col-lg-6 mb-4">
               <h5>
-                GitHub Insights v. 2
+                GitHub Universe Visualizations
                 <i class="fas fa-code-branch"></i>
               </h5>
               <h6>
-                <a href="#">What I did</a> | <a href="#">Live Site</a> |
-                <a href="#">View on GitHub</a>
+                <a
+                  href="https://githubuniversevis.herokuapp.com/"
+                  target="_blank"
+                  >Live Site</a
+                >
+                |
+                <a
+                  href="https://github.com/baslielababayehu/GitHub-Universe-Visualizer"
+                  target="_blank"
+                  >Source Code</a
+                >
               </h6>
-              <a href="#" class="item-wrap fancybox">
+              <a  href="https://githubuniversevis.herokuapp.com/" class="item-wrap fancybox" target="_blank">
                 <div class="work-info">
                   <h3>View Details</h3>
-                  <!-- <span> Vanilla Javascript, Node.js and Express</span> -->
+                  <!-- <span> Vanilla Javascript, Node.js and  Express.js</span> -->
                 </div>
                 <img
-                  style="background-color: #f8f9fa;"
+                  style="background-color: #f8f9fa"
                   class="img-fluid"
-                  src="assets/img/img_1.jpg"
+                  src="assets/img/github_universe.gif"
                 />
               </a>
               <div class="row p-3">
-                <div class="col-12 card p-1">
+                <div
+                  class="col-12 card p-1"
+                  style="background-color: rgba(52, 73, 94, 0.05)"
+                >
                   <h6>
-                    <b>Brief Description</b>: Uses the GitHub API and React to
-                    display insights regarding a specified user such as most
-                    popular repositories, number of followers etc.
-                  </h6>
-                  <h6><b>Tech: React, Node.js, Express</b></h6>
-                  <h6><b>Notable features:</b> React Hooks, context API</h6>
+                    <b>Brief Description</b>: GitHub Universe visualizes 3 components (preferred programming languages, forks, and stars)  of a searched GitHub user.
+                  <h5><b> Technologies: React</b></h5>
+                  <h6>Tools: GitHub API</h6>
                 </div>
               </div>
             </div>
             <div class="item web col-sm-6 col-md-6 col-lg-6 mb-4">
               <h5>
-                The Pocket Weather
+                Pocket Weather
                 <i class="fas fa-cloud-moon"></i>
               </h5>
               <h6>
-                <a href="#">What I did</a> | <a href="#">Live Site</a> |
-                <a href="#">View on GitHub</a>
+                <a
+                  href="https://the-pocket-weather.herokuapp.com/"
+                  target="_blank"
+                  >Live Site</a
+                >
+                |
+                <a
+                  href="https://github.com/baslielababayehu/the-pocket-weather"
+                  target="_blank"
+                  >Source Code</a
+                >
               </h6>
-              <a href="#" class="item-wrap fancybox">
+              <a href="https://the-pocket-weather.herokuapp.com/" class="item-wrap fancybox" target="_blank">
                 <div class="work-info">
                   <h3>View Details</h3>
-                  <!-- <span> Vanilla Javascript, Node.js and Express</span> -->
+                  <!-- <span> Vanilla Javascript, Node.js and  Express.js</span> -->
                 </div>
                 <img
-                  style="background-color: #f8f9fa;"
+                  style="background-color: #f8f9fa"
                   class="img-fluid"
-                  src="assets/img/img_1.jpg"
+                  src="assets/img/pocket_weather.png"
                 />
               </a>
               <div class="row p-3">
-                <div class="col-12 card p-1">
+                <div
+                  class="col-12 card p-1"
+                  style="background-color: rgba(52, 73, 94, 0.05)"
+                >
                   <h6>
-                    <b>Brief Description</b>: Uses the OpenWeathermap API to
-                    provide historical and future weather information around the
-                    globe with an intuitive UI.
+                    <b>Brief Description</b>: This web app returns and forecasts
+                    weather information for a specified location. It can process
+                    complex user input such as any combination of city, country,
+                    and street address.
                   </h6>
-                  <h6><b>Tech: Vanilla JS, Node.js, Express</b></h6>
+                  <h5><b> Technologies: Vanilla JS, Node.js, Express.js</b></h5>
+                  <h6>Tools: Google Geocoding API, OpenWeatherMap API</h6>
                 </div>
               </div>
             </div>
             <div class="item web col-sm-6 col-md-6 col-lg-6 mb-4">
               <h5>
-                GitHub Insights
-                <i class="fas fa-code-branch"></i>
+                Sorting Algorithm Visualizations
+                <i class="fas fa-sort-amount-down-alt"></i>
               </h5>
               <h6>
-                <a href="work-single.html">What I did</a> |
-                <a href="#">Live Site</a> | <a href="#">View on GitHub</a>
+                <a
+                  href="https://sortalgorithmvisualizer.herokuapp.com/"
+                  target="_blank"
+                  >Live Site</a
+                >
+                |
+                <a
+                  href="https://github.com/baslielababayehu/sorting-algorithm-visualizations"
+                  target="_blank"
+                  >Source Code</a
+                >
               </h6>
-              <a href="#" class="item-wrap fancybox">
+              <a href="https://sortalgorithmvisualizer.herokuapp.com/" class="item-wrap fancybox">
                 <div class="work-info">
                   <h3>View Details</h3>
-                  <!-- <span> Vanilla Javascript, Node.js and Express</span> -->
+                  <!-- <span> Vanilla Javascript, Node.js and  Express.js</span> -->
                 </div>
-                <img class="img-fluid" src="assets/img/img_1.jpg" />
+                <img class="img-fluid" src="assets/img/sort_visualizer.gif" />
               </a>
               <div class="row p-3">
-                <div class="col-12 card p-1">
+                <div
+                  class="col-12 card p-1"
+                  style="background-color: rgba(52, 73, 94, 0.05)"
+                >
                   <h6>
-                    <b>Brief Description</b>: Uses the GitHub API to display
-                    insights regarding a specified user such as most popular
-                    repositories, number of followers etc.
+                    <b>Brief Description</b>:  This app visualizes the steps of 4 sorting algorithms (Quick Sort, Bubble Sort, Insertion Sort and Selection Sort) through adjustable and highly interactive animations. 
                   </h6>
-                  <h6>Tech: Vanilla JS, Node.js, Express</h6>
+                  <h5><b>Technologies: React</b></h5>
                 </div>
               </div>
             </div>
             <div class="item web col-sm-6 col-md-6 col-lg-6 mb-4">
-              <h5>Chuck Norris Joke Generator</h5>
+              <h5>
+                Pizza Delivery Simulator <i class="fas fa-pizza-slice"></i>
+              </h5>
               <h6>
-                <a href="work-single.html">What I did</a> |
-                <a href="#">Live Site</a> | <a href="#">View on GitHub</a>
+                <a
+                  href="https://github.com/baslielababayehu/pizza-simulation"
+                  target="_blank"
+                  >Source Code</a
+                >
               </h6>
-              <a href="work-single.html" class="item-wrap fancybox">
+              <a href="https://github.com/baslielababayehu/pizza-simulation" class="item-wrap fancybox">
                 <div class="work-info">
                   <h3>View Details</h3>
-                  <!-- <span> Vanilla Javascript, Node.js and Express</span> -->
+                  <!-- <span> Vanilla Javascript, Node.js and  Express.js</span> -->
                 </div>
-                <img class="img-fluid" src="assets/img/img_1.jpg" />
+                <img class="img-fluid" src="assets/img/pizza_simulation.png" />
               </a>
               <div class="row p-3">
-                <div class="col-12 card p-1">
+                <div
+                  class="col-12 card p-1"
+                  style="background-color: rgba(52, 73, 94, 0.05)"
+                >
                   <h6>
-                    <b>Brief Description</b>: Generates a specified number of
-                    jokes using the Internet Chuck Norris Database API
+                    <b>Brief Description</b>: This program simulates a local
+                    pizza parlor on the command line. Users can log in a driver,
+                    take in orders etc. and the program keeps track of the
+                    relevant statistics.
                   </h6>
-                  <h6><b>Tech: Vanilla JS</b></h6>
-                </div>
-              </div>
-            </div>
-            <div class="item web col-sm-6 col-md-6 col-lg-6 mb-4">
-              <h5>Randomizer</h5>
-              <h6>
-                <a href="work-single.html">What I did</a> |
-                <a href="#">Live Site</a> | <a href="#">View on GitHub</a>
-              </h6>
-              <a href="work-single.html" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>View Details</h3>
-                  <!-- <span> Vanilla Javascript, Node.js and Express</span> -->
-                </div>
-                <img class="img-fluid" src="assets/img/img_1.jpg" />
-              </a>
-              <div class="row p-3">
-                <div class="col-12 card p-1">
-                  <h6>
-                    <b>Brief Description</b>: Randomly choses a user-defined
-                    option. Integrates visualization React components for great
-                    user experience.
-                  </h6>
-                  <h6><b>Tech: React</b></h6>
+                  <h5><b> Technologies: C++</b></h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div>
+        <h6 class="m-3">
+ 
+        
+      </div>
       <!-- End  Works Section -->
     </main>
     <!-- End #main -->
